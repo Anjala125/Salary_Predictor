@@ -43,7 +43,7 @@ function Dashboard() {
     <div className="min-h-screen flex bg-[#0b0f2f] text-white">
 
       {/* SIDEBAR */}
-      <aside className="w-64 bg-[#0f1535] md:flex flex-col p-6">
+      <aside className="w-64 bg-[#0f1535] hidden md:flex flex-col p-6">
         <h1 className="text-xl font-bold mb-10">VISION </h1>
 
         <nav className="space-y-4 text-gray-300">
