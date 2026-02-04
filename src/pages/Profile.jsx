@@ -44,43 +44,7 @@ function Profile() {
             <p><span className="text-gray-400">Email:</span> {user?.email}</p>
           </div>
         </div>
-
-        {/* Career Details */}
-        {prediction && (
-          <div className="mt-8">
-            <h3 className="text-lg font-semibold mb-4">
-              Career Details
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
-              <p><span className="text-gray-400">Role:</span> {prediction.role}</p>
-              <p><span className="text-gray-400">Experience:</span> {prediction.experience} years</p>
-              <p><span className="text-gray-400">Education:</span> {prediction.education}</p>
-              <p><span className="text-gray-400">Location:</span> {prediction.location}</p>
-              <p className="md:col-span-2">
-                <span className="text-gray-400">Skills:</span> {prediction.skills}
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Salary Section */}
-        {prediction?.predictedSalary && (
-          <div className="mt-8">
-            <h3 className="text-lg font-semibold mb-4">
-              Salary Prediction
-            </h3>
-
-            <div className="bg-[#1a1f4a] p-4 rounded-lg">
-              <p className="text-xl font-bold text-green-400">
-                ₹ {prediction.predictedSalary}
-              </p>
-              <p className="text-gray-400 text-sm">
-                Estimated Current Salary
-              </p>
-            </div>
-          </div>
-        )}
+        
 
         {/* Logout */}
         <div className="mt-10 flex justify-end">
